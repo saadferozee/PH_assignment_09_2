@@ -1,0 +1,110 @@
+[
+    {
+        "serviceId": 1,
+        "serviceName": "Winter Grooming & Paw Treatment",
+        "providerName": "CozyPets Grooming",
+        "providerEmail": "hello@cozypets.com",
+        "price": 3000,
+        "rating": 4.8,
+        "slotsAvailable": 3,
+        "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+        "image": "https://i.postimg.cc/example2.png",
+        "category": "Grooming"
+    },
+    {
+        "serviceId": 2,
+        "serviceName": "Full Pet Health Checkup",
+        "providerName": "HappyPaws Vet Clinic",
+        "providerEmail": "care@happypaws.com",
+        "price": 4500,
+        "rating": 4.7,
+        "slotsAvailable": 5,
+        "description": "Complete physical examination, vaccination review, and seasonal health advice.",
+        "image": "https://i.postimg.cc/example3.png",
+        "category": "Veterinary"
+    },
+    {
+        "serviceId": 3,
+        "serviceName": "Dog Walking (30 Minutes)",
+        "providerName": "Walkie Friends",
+        "providerEmail": "support@walkiefriends.com",
+        "price": 999,
+        "rating": 4.6,
+        "slotsAvailable": 6,
+        "description": "Safe and friendly dog walking service for exercise and outdoor fun.",
+        "image": "https://i.postimg.cc/example4.png",
+        "category": "Exercise"
+    },
+    {
+        "serviceId": 4,
+        "serviceName": "Cat Sitting (Home Visit)",
+        "providerName": "MeowCare Home Service",
+        "providerEmail": "contact@meowcare.com",
+        "price": 1500,
+        "rating": 4.9,
+        "slotsAvailable": 2,
+        "description": "Home visit for feeding, cleaning litterbox, and giving your cat quality attention.",
+        "image": "https://i.postimg.cc/example5.png",
+        "category": "Pet Sitting"
+    },
+    {
+        "serviceId": 5,
+        "serviceName": "Pet Nail Trimming",
+        "providerName": "Purrfect Groomers",
+        "providerEmail": "groom@purrfect.com",
+        "price": 599,
+        "rating": 4.5,
+        "slotsAvailable": 5,
+        "description": "Quick and painless nail trimming for cats, dogs, and small animals.",
+        "image": "https://i.postimg.cc/example6.png",
+        "category": "Grooming"
+    },
+    {
+        "serviceId": 6,
+        "serviceName": "Pet Boarding (Per Day)",
+        "providerName": "SafeStay Pet Lodge",
+        "providerEmail": "stay@safestay.com",
+        "price": 2799,
+        "rating": 4.8,
+        "slotsAvailable": 4,
+        "description": "Clean, comfortable, and supervised boarding for your pets while you're away.",
+        "image": "https://i.postimg.cc/example7.png",
+        "category": "Boarding"
+    },
+    {
+        "serviceId": 7,
+        "serviceName": "Dog Training - Basic Commands",
+        "providerName": "SmartPup Academy",
+        "providerEmail": "train@smartpup.com",
+        "price": 3999,
+        "rating": 4.7,
+        "slotsAvailable": 3,
+        "description": "Beginner-friendly training lessons teaching sit, stay, heel, and recall.",
+        "image": "https://i.postimg.cc/example8.png",
+        "category": "Training"
+    },
+    {
+        "serviceId": 8,
+        "serviceName": "Pet Photography Session",
+        "providerName": "FurryFrame Studios",
+        "providerEmail": "photo@furryframe.com",
+        "price": 899,
+        "rating": 5.0,
+        "slotsAvailable": 2,
+        "description": "Professional indoor or outdoor photoshoot to capture your pet’s cutest moments.",
+        "image": "https://i.postimg.cc/example9.png",
+        "category": "Photography"
+    },
+    {
+        "serviceId": 9,
+        "serviceName": "Winter Coat Fitting for Dogs (Custom Made)",
+        "providerName": "PawCare Studio",
+        "providerEmail": "info@pawcare.com",
+        "price": 2500,
+        "rating": 4.9,
+        "slotsAvailable": 4,
+        "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+        "image": "https://i.postimg.cc/example1.png",
+        "category": "Clothing"
+    }
+]

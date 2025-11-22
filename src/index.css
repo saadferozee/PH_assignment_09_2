@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+
+.active {
+  border: 2px solid #ff3600;
+  padding: 6px 20px;
+  border-radius: 20px;
+}
