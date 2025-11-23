@@ -107,10 +107,19 @@ const Navbar = () => {
                     {
                         user && (
                             <div className="w-10 h-10">
-                                <img
-                                    className='w-full h-full rounded-full'
-                                    alt="Tailwind CSS Navbar component"
-                                    src={user.photoURL} />
+                                {
+                                    user.photoURL ? (
+                                        <img
+                                            className='w-full h-full rounded-full'
+                                            alt="Tailwind CSS Navbar component"
+                                            src={user.photoURL} />
+                                    ) : (
+                                        <img
+                                            className='w-full h-full rounded-full'
+                                            alt="Tailwind CSS Navbar component"
+                                            src={'https://img.icons8.com/ios-filled/100/user-male-circle.png'} />
+                                    )
+                                }
                             </div>
                         )
                     }

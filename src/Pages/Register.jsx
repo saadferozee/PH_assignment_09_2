@@ -1,8 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import AuthContext from '../Contexts/AuthContext';
 import { Link, useNavigate } from 'react-router';
 
 import { FcGoogle } from "react-icons/fc";
+import { Bounce, ToastContainer, toast } from 'react-toastify';
+
 
 const Register = () => {
     const { user, setUser, signUp, loginWithGoogle, updateUserProfile } = useContext(AuthContext);
@@ -16,6 +18,50 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
 
+        const regex6Character = /^.{6,}$/;
+        const regexUppercase = /^(?=.*[A-Z]).*$/;
+        const regexLowercase = /^(?=.*[a-z]).*$/;
+
+        if (!regex6Character.test(password)) {
+            toast.error('Password must be at least 6 character.', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+            });
+            return;
+        } else if (!regexLowercase.test(password)) {
+            toast.error('Password must have a lowercase letter.', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+            });
+            return;
+        } else if (!regexUppercase.test(password)) {
+            toast.error('Password must have a uppercase letter.', {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+            });
+            return;
+        }
         signUp(email, password)
             .then(credential => {
                 setUser(credential.user);
@@ -79,6 +125,19 @@ const Register = () => {
                     </button>
                 </fieldset>
             </form>
+            <ToastContainer
+                position="top-center"
+                autoClose={2000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition={Bounce}
+            />
         </div>
     );
 };
