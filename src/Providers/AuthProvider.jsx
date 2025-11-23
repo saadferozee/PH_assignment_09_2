@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AuthContext from '../Contexts/AuthContext';
-import { Auth } from '../Firebase/Firebase.init';
+import { auth } from '../Firebase/Firebase.init';
 import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from 'firebase/auth';
 
 const AuthProvider = ({ children }) => {
@@ -8,29 +8,29 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState('')
 
     const signUp = (email, password) => {
-        return createUserWithEmailAndPassword(Auth, email, password);
+        return createUserWithEmailAndPassword(auth, email, password);
     }
 
     const userLogin = (email, password) => {
-        return signInWithEmailAndPassword(Auth, email, password);
+        return signInWithEmailAndPassword(auth, email, password);
     }
 
     const logout = () => {
-        return signOut(Auth);
+        return signOut(auth);
     }
 
     const updateUserProfile = (name, photoURL) =>{
         const info = {displayName: name, photoURL: photoURL};
-        updateProfile(Auth.currentUser, info);
+        updateProfile(auth.currentUser, info);
     }
 
     const googleProvider = new GoogleAuthProvider();
     const loginWithGoogle = () => {
-        return signInWithPopup(Auth, googleProvider)
+        return signInWithPopup(auth, googleProvider)
     }
 
     const Context = {
-        Auth,
+        Auth: auth,
         user,
         setUser,
         signUp,

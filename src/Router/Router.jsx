@@ -6,6 +6,7 @@ import Profile from "../Pages/Profile";
 import Register from "../Pages/Register";
 import Login from "../Pages/Login";
 import Services from "../Pages/Services";
+import NotFoundErrorPage from "../errors/NotFoundErrorPage";
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
             {
                 path: '/register',
                 Component: Register
+            },
+            {
+                path: '/*',
+                Component: NotFoundErrorPage,
             }
         ]
     }

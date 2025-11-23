@@ -85,7 +85,7 @@ const Navbar = () => {
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                         </div>
                         <ul
                             tabIndex="-1"
@@ -94,8 +94,8 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <Link className="pl-0 font-black text-[#ff3600] text-shadow-lg text-shadow-[#ff360040] flex items-center gap-1.5" href='/'>
-                        <span><MdOutlinePets className='text-5xl' /></span>
-                        <span className='text-4xl'>WarmPaws</span>
+                        <span><MdOutlinePets className='text-2xl sm:text-5xl' /></span>
+                        <span className='text-xl sm:text-4xl'>WarmPaws</span>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -106,7 +106,7 @@ const Navbar = () => {
                 <div className="navbar-end space-x-1.5">
                     {
                         user && (
-                            <div className="w-10 h-10">
+                            <div className="w-10 h-10" onClick={() => navigate('/profile')} title={user.displayName} >
                                 {
                                     user.photoURL ? (
                                         <img
@@ -125,7 +125,7 @@ const Navbar = () => {
                     }
                     {
                         user ? (
-                            <a className="btn bg-[#ff3600] rounded-full px-5 text-white text-lg" onClick={handleLogoutButton}>Logout</a>
+                            <a className="btn bg-[#ff3600] rounded-full px-5 text-white text-lg hidden sm:flex" onClick={handleLogoutButton}>Logout</a>
                         ) : (
                             <a className="btn bg-[#ff3600] rounded-full px-8 text-white text-lg" onClick={handleLoginButton}>Login</a>
                         )

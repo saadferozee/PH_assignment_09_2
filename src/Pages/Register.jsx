@@ -1,10 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import AuthContext from '../Contexts/AuthContext';
 import { Link, useNavigate } from 'react-router';
 
 import { FcGoogle } from "react-icons/fc";
 import { Bounce, ToastContainer, toast } from 'react-toastify';
-
 
 const Register = () => {
     const { user, setUser, signUp, loginWithGoogle, updateUserProfile } = useContext(AuthContext);
@@ -114,7 +113,7 @@ const Register = () => {
                     </p>
 
                     <button
-                        type='button' 
+                        type='button'
                         disabled={user && true}
                         title={user && 'You are already logged in.'}
                         onClick={handleGoogleSignUp}
