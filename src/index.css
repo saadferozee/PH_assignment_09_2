@@ -3,6 +3,9 @@
   themes: light --default;
 }
 
+.font-stretched {
+  font-stretch: 350%;
+}
 
 .active {
   border: 2px solid #ff3600;

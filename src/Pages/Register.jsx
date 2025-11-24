@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import AuthContext from '../Contexts/AuthContext';
 import { Link, useNavigate } from 'react-router';
-
+import Swal from 'sweetalert2';
 import { FcGoogle } from "react-icons/fc";
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 
@@ -65,9 +65,30 @@ const Register = () => {
             .then(credential => {
                 setUser(credential.user);
                 updateUserProfile(name, photoURL);
+                Swal.fire({
+                    icon: "success",
+                    title: "You are Logged In",
+                    text: "To see and edit your profile information, go My Profile"
+                });
                 navigate('/');
             }).catch(error => {
-                console.log(error);
+                if (error.message === 'Firebase: Error (auth/invalid-credential).') {
+                    Swal.fire({
+                        icon: "error",
+                        title: 'Invalid Password or UserName.',
+                        text: "Something went wrong, please check and try again!",
+                        footer: `<a href="/register">Do not have an account ? Please register.</a>`
+                    });
+                    console.log(error);
+                } else {
+                    Swal.fire({
+                        icon: "error",
+                        title: error.message,
+                        text: "Something went wrong, please check and try again!",
+                        footer: `<a href="/register">Do not have an account ? Please register.</a>`
+                    });
+                    console.log(error);
+                }
             })
     }
     const handleGoogleSignUp = () => {
@@ -75,8 +96,19 @@ const Register = () => {
             .then(credential => {
                 const user = credential.user;
                 setUser(user);
+                Swal.fire({
+                    title: "Good job!",
+                    text: "You clicked the button!",
+                    icon: "success"
+                });
                 navigate('/');
             }).catch(error => {
+                Swal.fire({
+                    icon: "error",
+                    title: error.message,
+                    text: "Something went wrong!",
+                    footer: '<a href="#">Why do I have this issue?</a>'
+                });
                 console.log(error);
             })
     }
