@@ -39,42 +39,42 @@ const Slider = () => {
                         <div className='h-fit'>
                             <h1 className='mx-[2.11%] mb-1.5 pb-1.25 font-semibold font-stretched text-xs sm:text-2xl text-[#ff3600] text-shadow-lg text-shadow-[#00000010] text-center'>Clean moments build trust between pets and owners.</h1>
                             {/* <hr className='my-2 mx-[3%] text-shadow-lg' /> */}
-                            <img className='m-[2%] my-0 h-[600px] w-[96%] object-cover rounded-lg' src="../../public/photos/pet-care-1.png" alt="dog taking shower with his master" />
+                            <img className='m-[2%] my-0 h-[600px] w-[96%] object-cover rounded-lg' src="/pet-care-1.png" alt="dog taking shower with his master" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className='flex flex-col justify-center items-center'>
                         <div className='h-fit'>
                             <h1 className='mx-[2.11%] mb-1.5 pb-1.25 font-semibold font-stretched text-xs sm:text-2xl text-[#ff3600] text-shadow-lg text-shadow-[#00000010] text-center'>Playful moments strengthen the bond you share.</h1>
                             {/* <hr className='my-2 mx-[3%] text-shadow-lg' /> */}
-                            <img className='m-[2%] my-0 h-[600px] w-[96%] object-cover rounded-lg' src="../../public/photos/pet-care-2.png" alt="young lady playing with dog" />
+                            <img className='m-[2%] my-0 h-[600px] w-[96%] object-cover rounded-lg' src="/pet-care-2.png" alt="young lady playing with dog" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className='flex flex-col justify-center items-center'>
                         <div className='h-fit'>
                             <h1 className='mx-[2.11%] mb-1.5 pb-1.25 font-semibold font-stretched text-xs sm:text-2xl text-[#ff3600] text-shadow-lg text-shadow-[#00000010] text-center'>A fresh bath brings comfort and happy paws.</h1>
                             {/* <hr className='my-2 mx-[3%] text-shadow-lg' /> */}
-                            <img className='m-[2%] my-0 h-[600px] w-[96%] object-cover rounded-lg' src="../../public/photos/pet-care-3.png" alt="dog taking shower by car washer hose pipe" />
+                            <img className='m-[2%] my-0 h-[600px] w-[96%] object-cover rounded-lg' src="/pet-care-3.png" alt="dog taking shower by car washer hose pipe" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className='flex flex-col justify-center items-center'>
                         <div className='h-fit'>
                             <h1 className='mx-[2.11%] mb-1.5 pb-1.25 font-semibold font-stretched text-xs sm:text-2xl text-[#ff3600] text-shadow-lg text-shadow-[#00000010] text-center'>Active dogs stay healthy, cheerful, and confident.</h1>
                             {/* <hr className='my-2 mx-[3%] text-shadow-lg' /> */}
-                            <img className='m-[2%] my-0 h-[600px] w-[96%] object-cover rounded-lg' src="../../public/photos/pet-care-4.png" alt="dog playing with a plastic bone in a field" />
+                            <img className='m-[2%] my-0 h-[600px] w-[96%] object-cover rounded-lg' src="/pet-care-4.png" alt="dog playing with a plastic bone in a field" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className='flex flex-col justify-center items-center'>
                         <div className='h-fit'>
                             <h1 className='mx-[2.11%] mb-1.5 pb-1.25 font-semibold font-stretched text-xs sm:text-2xl text-[#ff3600] text-shadow-lg text-shadow-[#00000010] text-center'>Vaccinated pets live safer, stronger, happier lives.</h1>
                             {/* <hr className='my-2 mx-[3%] text-shadow-lg' /> */}
-                            <img className='m-[2%] my-0 h-[600px] w-[96%] object-cover rounded-lg' src="../../public/photos/pet-care-5.png" alt="Dog taking vaccine while playing" />
+                            <img className='m-[2%] my-0 h-[600px] w-[96%] object-cover rounded-lg' src="/pet-care-5.png" alt="Dog taking vaccine while playing" />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className='flex flex-col justify-center items-center'>
                         <div className='h-fit'>
                             <h1 className='mx-[2.11%] mb-1.5 pb-1.25 font-semibold font-stretched text-xs sm:text-2xl text-[#ff3600] text-shadow-lg text-shadow-[#00000010] text-center'>Professional care keeps your beloved pet protected.</h1>
                             {/* <hr className='my-2 mx-[3%] text-shadow-lg' /> */}
-                            <img className='m-[2%] my-0 h-[600px] w-[96%] object-cover rounded-lg' src="../../public/photos/pet-care-6.png" alt="lady doctor giving vaccine to dog" />
+                            <img className='m-[2%] my-0 h-[600px] w-[96%] object-cover rounded-lg' src="/pet-care-6.png" alt="lady doctor giving vaccine to dog" />
                         </div>
                     </SwiperSlide>
                 </Swiper>
