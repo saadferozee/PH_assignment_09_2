@@ -7,6 +7,7 @@ import Register from "../Pages/Register";
 import Login from "../Pages/Login";
 import Services from "../Pages/Services";
 import NotFoundErrorPage from "../errors/NotFoundErrorPage";
+import ServiceDetails from "../Pages/ServiceDetails";
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: '/services',
                 Component: Services
+            },
+            {
+                path: '/services/:id',
+                Component: ServiceDetails
             },
             {
                 path: '/profile',

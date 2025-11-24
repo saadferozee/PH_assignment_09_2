@@ -6,6 +6,9 @@
 .font-stretched {
   font-stretch: 350%;
 }
+.font-semi-stretched {
+  font-stretch: 120%;
+}
 
 .active {
   border: 2px solid #ff3600;

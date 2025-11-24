@@ -26,26 +26,34 @@ const Login = () => {
                 navigate('/');
             }).catch(error => {
                 if (error.message === 'Firebase: Error (auth/invalid-credential).') {
-                Swal.fire({
-                    icon: "error",
-                    title: 'Invalid Password or UserName.',
-                    text: "Something went wrong, please check and try again!",
-                    footer: `<a href="/register">Do not have an account ? Please register.</a>`
-                });
-                console.log(error);
-            } else {
-                Swal.fire({
-                    icon: "error",
-                    title: error.message,
-                    text: "Something went wrong, please check and try again!",
-                    footer: `<a href="/register">Do not have an account ? Please register.</a>`
-                });
-                console.log(error);
-            }
+                    Swal.fire({
+                        icon: "error",
+                        title: 'Invalid Password or UserName.',
+                        text: "Something went wrong, please check and try again!",
+                        footer: `<a href="/register">Do not have an account ? Please register.</a>`
+                    });
+                    console.log(error);
+                } else if (error.message === 'Firebase: Error (auth/invalid-email).') {
+                    Swal.fire({
+                        icon: "error",
+                        title: 'Invalid Email.',
+                        text: "Something went wrong, please check and try again!",
+                        footer: `<a href="/register">Do not have an account ? Please register.</a>`
+                    });
+                    console.log(error);
+                } else {
+                    Swal.fire({
+                        icon: "error",
+                        title: error.message,
+                        text: "Something went wrong, please check and try again!",
+                        footer: `<a href="/register">Do not have an account ? Please register.</a>`
+                    });
+                    console.log(error);
+                }
             });
-        };
-        const handleGoogleLogin = () => {
-            loginWithGoogle()
+    };
+    const handleGoogleLogin = () => {
+        loginWithGoogle()
             .then(credential => {
                 const user = credential.user;
                 setUser(user);

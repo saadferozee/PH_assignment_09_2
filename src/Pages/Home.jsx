@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css';
 import { Pagination } from 'swiper/modules';
 import Slider from '../Elements/Slider';
+import PopularService from '../Elements/PopularService';
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
             <title>WarmPaws | Home</title>
             <div>
                 <Slider></Slider>
+                <PopularService></PopularService>
             </div>
         </div>
     );

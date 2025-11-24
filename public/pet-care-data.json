@@ -8,19 +8,19 @@
         "rating": 4.8,
         "slotsAvailable": 3,
         "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
-        "image": "https://i.postimg.cc/example2.png",
+        "image": "https://i.postimg.cc/zvQ5L66c/Dog-grooming-tools-1024x1024.jpg",
         "category": "Grooming"
     },
     {
         "serviceId": 2,
-        "serviceName": "Full Pet Health Checkup",
+        "serviceName": "Full Health Checkup for Pet",
         "providerName": "HappyPaws Vet Clinic",
         "providerEmail": "care@happypaws.com",
         "price": 4500,
-        "rating": 4.7,
+        "rating": 5.0,
         "slotsAvailable": 5,
         "description": "Complete physical examination, vaccination review, and seasonal health advice.",
-        "image": "https://i.postimg.cc/example3.png",
+        "image": "https://i.postimg.cc/QMFzCVsv/ginger-cat-health-check.webp",
         "category": "Veterinary"
     },
     {
@@ -29,10 +29,10 @@
         "providerName": "Walkie Friends",
         "providerEmail": "support@walkiefriends.com",
         "price": 999,
-        "rating": 4.6,
+        "rating": 4.5,
         "slotsAvailable": 6,
         "description": "Safe and friendly dog walking service for exercise and outdoor fun.",
-        "image": "https://i.postimg.cc/example4.png",
+        "image": "https://i.postimg.cc/CLw6DcSm/how-to-walk-bigger-dogs-on-dog-walks.jpg",
         "category": "Exercise"
     },
     {
@@ -44,7 +44,7 @@
         "rating": 4.9,
         "slotsAvailable": 2,
         "description": "Home visit for feeding, cleaning litterbox, and giving your cat quality attention.",
-        "image": "https://i.postimg.cc/example5.png",
+        "image": "https://i.postimg.cc/ncV0MMGw/yerlin-matu-481826-unsplash.jpg",
         "category": "Pet Sitting"
     },
     {
@@ -56,7 +56,7 @@
         "rating": 4.5,
         "slotsAvailable": 5,
         "description": "Quick and painless nail trimming for cats, dogs, and small animals.",
-        "image": "https://i.postimg.cc/example6.png",
+        "image": "https://i.postimg.cc/GtLJBSGL/Dogs-nails-being-trimmed.jpg",
         "category": "Grooming"
     },
     {
@@ -68,7 +68,7 @@
         "rating": 4.8,
         "slotsAvailable": 4,
         "description": "Clean, comfortable, and supervised boarding for your pets while you're away.",
-        "image": "https://i.postimg.cc/example7.png",
+        "image": "https://i.postimg.cc/k49WZhjQ/pet-boarding.webp",
         "category": "Boarding"
     },
     {
@@ -80,7 +80,7 @@
         "rating": 4.7,
         "slotsAvailable": 3,
         "description": "Beginner-friendly training lessons teaching sit, stay, heel, and recall.",
-        "image": "https://i.postimg.cc/example8.png",
+        "image": "https://i.postimg.cc/gj7XYMDc/img-inperson.jpg",
         "category": "Training"
     },
     {
@@ -89,10 +89,10 @@
         "providerName": "FurryFrame Studios",
         "providerEmail": "photo@furryframe.com",
         "price": 899,
-        "rating": 5.0,
+        "rating": 4.7,
         "slotsAvailable": 2,
         "description": "Professional indoor or outdoor photoshoot to capture your pet’s cutest moments.",
-        "image": "https://i.postimg.cc/example9.png",
+        "image": "https://i.postimg.cc/CxT5mnrt/adorable-cat-photographers-ryostory1124-fb40.png",
         "category": "Photography"
     },
     {
@@ -101,10 +101,10 @@
         "providerName": "PawCare Studio",
         "providerEmail": "info@pawcare.com",
         "price": 2500,
-        "rating": 4.9,
+        "rating": 4.4,
         "slotsAvailable": 4,
         "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
-        "image": "https://i.postimg.cc/example1.png",
+        "image": "https://i.postimg.cc/1t2VSCM9/breed-and-coat-type.webp",
         "category": "Clothing"
     }
 ]
