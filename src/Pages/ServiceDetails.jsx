@@ -4,15 +4,15 @@ import { useParams } from 'react-router';
 const ServiceDetails = () => {
 
     const params = useParams();
-    const {id} = params;
+    const { id } = params;
 
     const [serviceData, setServiceData] = useState('');
 
-    useEffect(()=> {
+    useEffect(() => {
         fetch('/pet-care-data.json')
-        .then(reference => reference.json())
-        .then(result => setServiceData(result.find(service => service.serviceId == id)))
-        .catch(error => console.log(error))
+            .then(reference => reference.json())
+            .then(result => setServiceData(result.find(service => service.serviceId == id)))
+            .catch(error => console.log(error))
     }, [])
 
     // {
@@ -32,7 +32,12 @@ const ServiceDetails = () => {
 
     return (
         <div>
-            <h1>{serviceName}</h1>
+            <div className='m-[3%] p-[2%] rounded-4xl bg-[#ff360025] min-h-[600px] flex gap-10'>
+                <div className='w-[45%]'>
+                    <img className='rounded-2xl w-full h-full object-cover' src={image} alt="" />
+                </div>
+                <h1>{serviceName}</h1>
+            </div>
         </div>
     );
 };
