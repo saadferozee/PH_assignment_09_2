@@ -1,13 +1,16 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import AuthContext from '../Contexts/AuthContext';
 import { Link, useNavigate } from 'react-router';
 import Swal from 'sweetalert2';
 import { FcGoogle } from "react-icons/fc";
 import { Bounce, ToastContainer, toast } from 'react-toastify';
+import { LuEye, LuEyeClosed } from "react-icons/lu";
 
 const Register = () => {
     const { user, setUser, signUp, loginWithGoogle, updateUserProfile } = useContext(AuthContext);
     const navigate = useNavigate();
+
+    const [show, setShow] = useState(false);
 
     const handleRegisterSubmit = e => {
         e.preventDefault();
@@ -129,8 +132,18 @@ const Register = () => {
                     {/* <label className="label text-white text-lg">Email</label> */}
                     <input type="email" name='email' className="input w-full rounded-full p-7 text-xl" placeholder="Email" required />
 
-                    {/* <label className="label text-white text-lg">Password</label> */}
-                    <input type="password" name='password' className="input w-full rounded-full p-7 text-xl" placeholder="Password" required />
+                    <div className='relative z-0'>
+                        {/* <label className="label text-white text-lg">Password</label> */}
+                        <input type={ show ? 'text' : 'password'} name='password' className="input w-full rounded-full p-7 text-xl" placeholder="Password" required />
+                        <button
+                            type='button'
+                            onClick={()=> setShow(!show)}
+                            className='absolute right-5.5 top-4.5 z-10 cursor-pointer'
+                            title={show ? 'Click to hide password' : 'Click to show password'}
+                        >
+                            { show ? <LuEyeClosed className='text-2xl text-[#000000] opacity-60' /> : <LuEye className='text-2xl text-[#000000] opacity-60' />}
+                        </button>
+                    </div>
 
                     <button
                         type='submit'

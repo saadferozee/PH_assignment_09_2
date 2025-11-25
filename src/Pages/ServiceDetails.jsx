@@ -36,7 +36,10 @@ const ServiceDetails = () => {
                 <div className='w-[45%]'>
                     <img className='rounded-2xl w-full h-full object-cover' src={image} alt="" />
                 </div>
-                <h1>{serviceName}</h1>
+                <div>
+                    <h1>{serviceName}</h1>
+                    <h3>{providerName}</h3>
+                </div>
             </div>
         </div>
     );
