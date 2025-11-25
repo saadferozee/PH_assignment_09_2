@@ -8,6 +8,7 @@ import Login from "../Pages/Login";
 import Services from "../Pages/Services";
 import NotFoundErrorPage from "../errors/NotFoundErrorPage";
 import ServiceDetails from "../Pages/ServiceDetails";
+import Loading from "../Components/Loading";
 
 
 const router = createBrowserRouter([
@@ -43,12 +44,16 @@ const router = createBrowserRouter([
                 path: '/register',
                 Component: Register
             },
-            {
-                path: '/*',
-                Component: NotFoundErrorPage,
-            }
+            // {
+            //     path: '/loading',
+            //     Component: Loading
+            // }
         ]
-    }
+    },
+    {
+        path: '/*',
+        Component: NotFoundErrorPage,
+    },
 ]);
 
 export default router;

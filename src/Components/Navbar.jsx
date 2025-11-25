@@ -27,12 +27,12 @@ const Navbar = () => {
             </span>
             <span className='text-lg'>Services</span>
         </NavLink>
-        <NavLink className='flex gap-1' to={'/about'}>
+        {/* <NavLink className='flex gap-1' to={'/about'}>
             <span className='text-xl flex items-center'>
                 <LiaInfoCircleSolid />
             </span>
             <span className='text-lg'>About</span>
-        </NavLink>
+        </NavLink> */}
         <NavLink className='flex gap-1' to={'/profile'}>
             <span className='text-xl flex items-center'>
                 <PiIdentificationBadge />
@@ -53,12 +53,12 @@ const Navbar = () => {
             </span>
             <span>Services</span>
         </NavLink>
-        <NavLink className='flex gap-1' to={'/about'}>
+        {/* <NavLink className='flex gap-1' to={'/about'}>
             <span className='flex items-center'>
                 <LiaInfoCircleSolid />
             </span>
             <span>About</span>
-        </NavLink>
+        </NavLink> */}
         <NavLink className='flex gap-1' to={'/profile'}>
             <span className='flex items-center'>
                 <PiIdentificationBadge />

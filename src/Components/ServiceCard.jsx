@@ -13,7 +13,7 @@ const ServiceCard = ({ service }) => {
         <div className='w-auto bg-white rounded-xl p-4 flex flex-col justify-between gap-3'>
             <img className='w-full h-[300px] rounded-lg object-cover' src={image} alt="" />
             <h1 className='font-stretched\ font-semibold font-semi-stretched text-2xl text-[#ff3600]'>{serviceName}</h1>
-            <div className='flex justify-between font-stretched'>
+            <div className='flex flex-col justify-between font-stretched'>
                 <h4 className='flex items-center gap-1 font-extralight'>
                     Price : 
                     <span className='font-normal flex items-center'>{' '}{price} <TbCurrencyTaka /></span>

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Keep Your Pet Warm in Winter",
+        "tip": "Use a light wool layer, a dry bed, and a draft-free corner—these three keep pets the coziest."
+    },
+    {
+        "id": 2,
+        "title": "Nail Trimming Without Stress",
+        "tip": "Warm the paws for 2-3 minutes before trimming; it softens the nails and makes cutting easier."
+    },
+    {
+        "id": 3,
+        "title": "Safer Dog Walks at Night",
+        "tip": "Use a reflective leash—helps you see your dog, and helps drivers see both of you."
+    },
+    {
+        "id": 4,
+        "title": "Beat Cat Boredom Quickly",
+        "tip": "Just 10 minutes of interactive play daily reduces mischief and boosts activity."
+    },
+    {
+        "id": 5,
+        "title": "Stop Fur Tangles Easily",
+        "tip": "Brush dry fur twice a week to prevent knots and reduce shedding."
+    },
+    {
+        "id": 6,
+        "title": "Simple Daily Health Boost",
+        "tip": "Clean the water bowl twice a day—fewer germs, more hydration."
+    }
+]

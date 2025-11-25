@@ -1,0 +1,74 @@
+[
+    {
+        "doctorId": 1,
+        "name": "Dr. Afsana Rahman",
+        "email": "afsana@happypaws.com",
+        "experience": "7 years",
+        "rating": 4.9,
+        "specialties": [
+            "Vaccination",
+            "Dog & Cat Grooming"
+        ],
+        "servicesProvided": [
+            "Full Pet Health Checkup",
+            "Winter Grooming & Paw Treatment"
+        ],
+        "availability": {
+            "days": [
+                "Saturday",
+                "Monday",
+                "Wednesday"
+            ],
+            "slots": 5
+        },
+        "profileImage": "https://i.postimg.cc/TPXTrPvZ/photo-1659353888906-adb3e0041693.jpg"
+    },
+    {
+        "doctorId": 2,
+        "name": "Dr. Imran Chowdhury",
+        "email": "imran@vetcareplus.com",
+        "experience": "10 years",
+        "rating": 4.8,
+        "specialties": [
+            "Pet Surgery",
+            "Pet Nutrition"
+        ],
+        "servicesProvided": [
+            "Pet Boarding Health Screening",
+            "General Checkup"
+        ],
+        "availability": {
+            "days": [
+                "Sunday",
+                "Tuesday",
+                "Thursday"
+            ],
+            "slots": 4
+        },
+        "profileImage": "https://i.postimg.cc/8CDV7nhD/shutterstock-2480850611.jpg"
+    },
+    {
+        "doctorId": 3,
+        "name": "Dr. Nusrat Jahan",
+        "email": "nusrat@cozypetclinic.com",
+        "experience": "5 years",
+        "rating": 4.7,
+        "specialties": [
+            "Cat Health Specialist",
+            "Grooming & Hygiene"
+        ],
+        "servicesProvided": [
+            "Winter Skin & Paw Treatment",
+            "Seasonal Health Checkup"
+        ],
+        "availability": {
+            "days": [
+                "Friday",
+                "Saturday",
+                "Monday"
+            ],
+            "slots": 3
+        },
+        "profileImage": "https://i.postimg.cc/NjtgXMtq/images.jpg"
+    }
+]
