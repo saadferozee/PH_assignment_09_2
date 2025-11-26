@@ -2,7 +2,6 @@
 @plugin "daisyui" {
   themes: light --default;
 }
-import 'aos/dist/aos.css';
 
 .font-stretched {
   font-stretch: 350%;
