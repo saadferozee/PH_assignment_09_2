@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Aos from 'aos';
 
 const VetCard = ({ vet }) => {
 
     const { name, email, specialties, servicesProvided, profileImage } = vet;
 
     useEffect(()=> {
-        AOS.init({
+        Aos.init({
             duration: 800,     // animation speed
             easing: 'ease-in-out',
             once: false,       // every scroll animate

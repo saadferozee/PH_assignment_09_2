@@ -80,7 +80,7 @@ const Login = () => {
     }
 
     return (
-        <div className='h-[70vh] flex items-center justify-center'>
+        <div className='h-[75vh] flex items-center justify-center'>
             <title>WormPows | Login</title>
             <form onSubmit={handleLoginSubmit} className='w-full'>
                 <fieldset className="fieldset space-y-3 bg-[#ff3600] shadow-2xl shadow-[#ff3600] opacity-90 rounded-3xl lg:w-[600px] mx-auto px-12 py-8">

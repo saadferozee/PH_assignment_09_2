@@ -16,7 +16,7 @@ const Navbar = () => {
     // console.log(user);
     const navigate = useNavigate();
 
-    const links = <div className='*:px-[22px] flex items-center'>
+    const links = <div className='*:px-[21px] flex items-center'>
         <NavLink className='flex gap-1' to={'/'}>
             <span className='text-xl flex items-center'>
                 <HiOutlineHome />
@@ -33,7 +33,7 @@ const Navbar = () => {
             <span className='text-xl flex items-center'>
                 <HiOutlineShoppingCart />
             </span>
-            <span className='text-lg'>Pet Shop</span>
+            <span className='text-lg'>Pet Food</span>
         </NavLink>
         <NavLink className='flex gap-1' to={'/profile'}>
             <span className='text-xl flex items-center'>
@@ -59,7 +59,7 @@ const Navbar = () => {
             <span className='flex items-center'>
                 <HiOutlineShoppingCart />
             </span>
-            <span>Pet Shop</span>
+            <span>Pet Food</span>
         </NavLink>
         <NavLink className='flex gap-1' to={'/profile'}>
             <span className='flex items-center'>

@@ -3,8 +3,8 @@ import { FaRegStar } from "react-icons/fa6";
 import { TbCurrencyTaka } from "react-icons/tb";
 import { useNavigate } from 'react-router';
 
-import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Aos from 'aos';
 
 
 const ServiceCard = ({ service }) => {
@@ -13,7 +13,7 @@ const ServiceCard = ({ service }) => {
     const { serviceId, serviceName, image, rating, price } = service;
 
     useEffect(() => {
-        AOS.init({
+        Aos.init({
             duration: 800,     // animation speed
             easing: 'ease-in-out',
             once: false,       // every scroll animate
