@@ -4,7 +4,7 @@ import AuthContext from '../Contexts/AuthContext';
 const Profile = () => {
 
     const { user, updateUserProfile } = useContext(AuthContext);
-    const [formOpen, setFormOpen] = useState(true);
+    const [formOpen, setFormOpen] = useState(false);
 
     const handleUpdateProfileForm = e => {
         const name = e.target.name.value;
