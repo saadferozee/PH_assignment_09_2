@@ -2,6 +2,7 @@
 @plugin "daisyui" {
   themes: light --default;
 }
+import 'aos/dist/aos.css';
 
 .font-stretched {
   font-stretch: 350%;
@@ -12,6 +13,6 @@
 
 .active {
   border: 1px solid #ff3600;
-  padding: 6px 20px;
+  padding: 4px 20px;
   border-radius: calc(infinity * 1px);
 }

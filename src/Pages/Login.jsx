@@ -12,6 +12,7 @@ const Login = () => {
     const location = useLocation();
 
     const [show, setShow] = useState(false);
+    const [email, setEmail] = useState('');
 
     const handleLoginSubmit = e => {
         e.preventDefault();
@@ -86,7 +87,12 @@ const Login = () => {
                     <h3 className='font-black text-white text-5xl text-center'>Login</h3>
 
                     {/* <label className="label text-white text-lg">Email</label> */}
-                    <input type="email" name='email' className="input w-full rounded-full p-7 text-xl" placeholder="Email" />
+                    <input
+                        type="email" 
+                        name='email' 
+                        className="input w-full rounded-full p-7 text-xl"
+                        onChange={e => setEmail(e.target.value)} 
+                        placeholder="Email" />
 
                     <div className='relative z-0'>
                         {/* <label className="label text-white text-lg">Password</label> */}
@@ -111,7 +117,7 @@ const Login = () => {
                     <div>
                         <p className='text-white text-sm'>
                             <span>Forget Password ? click on </span>
-                            <Link className='link text-shadow-lg text-shadow-[#00000020]' to={'/register'}>Reset Password</Link>
+                            <Link className='link text-shadow-lg text-shadow-[#00000020]' to={`/forget-pass/${email ? email : 'example@gmail.com'}`}>Reset Password</Link>
                         </p>
                         <p className='text-white text-sm'>
                             <span>Do not have an account ? Please </span>

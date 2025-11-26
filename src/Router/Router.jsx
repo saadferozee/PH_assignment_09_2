@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import Root from "../Pages/Root";
 import Home from "../Pages/Home";
-import About from "../Pages/About";
 import Profile from "../Pages/Profile";
 import Register from "../Pages/Register";
 import Login from "../Pages/Login";
@@ -10,6 +9,7 @@ import NotFoundErrorPage from "../errors/NotFoundErrorPage";
 import ServiceDetails from "../Pages/ServiceDetails";
 import PetShop from "../Pages/PetShop";
 import PrivateRoute from "./PrivateRoute";
+import ForgetPass from "../Pages/ForgetPass";
 
 
 const router = createBrowserRouter([
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
                 Component: Home
             },
             {
-                path: '/about',
-                Component: About
+                path: '/pet-shop',
+                element: <PrivateRoute><PetShop></PetShop></PrivateRoute>
             },
             {
                 path: '/services',
@@ -40,6 +40,10 @@ const router = createBrowserRouter([
             {
                 path: '/login',
                 Component: Login
+            },
+            {
+                path: '/forget-pass/:email',
+                Component: ForgetPass
             },
             {
                 path: '/register',

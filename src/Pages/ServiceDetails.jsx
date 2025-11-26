@@ -38,6 +38,7 @@ const ServiceDetails = () => {
 
     return (
         <div className=' min-h-[70vh] flex flex-col items-center'>
+            <title>WarmPaws | Service Details</title>
             <div className='m-[3%] p-[2%] rounded-4xl bg-[#ff360025] flex flex-col lg:flex-row gap-10'>
                 <div className='w-full lg:w-[45%]'>
                     <img className='rounded-2xl w-full h-full object-cover' src={image} alt="" />

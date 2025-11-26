@@ -19,6 +19,7 @@ const Services = () => {
 
     return (
         <div className='bg-[#ff360025] py-6'>
+            <title>WarmPaws | All Services</title>
             <div className='mx-[5%]'>
                 <div className='my-6 w-fit mx-auto'>
                     <h1 className='font-stretched font-bold text-2xl lg:text-5xl text-[#ff3600] text-shadow-lg text-shadow-white flex items-center gap-6'>All Services from
