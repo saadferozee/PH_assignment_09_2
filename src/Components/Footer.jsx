@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className="footer footer-horizontal footer-center bg-white drop-shadow-2xl drop-shadow-[#ff360070] text-shadow-lg rounded p-6 text-[#ff3600]">
-            <nav className="grid grid-flow-col gap-8">
+            <nav className="grid grid-flow-row sm:grid-flow-col sm:gap-8">
                 <a className="link link-hover">Contact</a>
                 <a className="link link-hover">About us</a>
                 <a className="link link-hover">Terms and Conditions</a>
@@ -47,7 +47,7 @@ const Footer = () => {
                 </div>
             </nav>
             <aside>
-                <p>Copyright © {new Date().getFullYear()} - All right reserved by WarmPaws Private Limited </p>
+                <p className='font-stretched'>Copyright © {new Date().getFullYear()} - All right reserved by WarmPaws Private Limited </p>
             </aside>
         </footer>
     );

@@ -1,14 +1,15 @@
 import React, { use, useState } from 'react';
 import AuthContext from '../Contexts/AuthContext';
-import { Link, useNavigate } from 'react-router';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router';
 import Swal from 'sweetalert2';
 import { FcGoogle } from "react-icons/fc";
-import { LuEye, LuEyeClosed } from "react-icons/lu";
+import { LuEye, LuEyeClosed, LuOctagonX } from "react-icons/lu";
 
 const Login = () => {
 
     const { user, setUser, userLogin, loginWithGoogle } = use(AuthContext);
     const navigate = useNavigate();
+    const location = useLocation();
 
     const [show, setShow] = useState(false);
 
@@ -26,7 +27,7 @@ const Login = () => {
                     title: "You are Logged In",
                     text: "To see and edit your profile information, go My Profile"
                 });
-                navigate('/');
+                navigate(location.state ? location.state : '/');
             }).catch(error => {
                 if (error.message === 'Firebase: Error (auth/invalid-credential).') {
                     Swal.fire({
@@ -61,11 +62,11 @@ const Login = () => {
                 const user = credential.user;
                 setUser(user);
                 Swal.fire({
-                    title: "Good job!",
-                    text: "You clicked the button!",
+                    title: "You are Logged In!",
+                    text: "To see and edit your profile information, go 'My Profile'",
                     icon: "success"
                 });
-                navigate('/');
+                navigate(location.state ? location.state : '/');
             }).catch(error => {
                 Swal.fire({
                     icon: "error",

@@ -10,6 +10,7 @@ import Slider from '../Elements/Slider';
 import PopularService from '../Elements/PopularService';
 import VetData from '../Elements/VetData';
 import Tips from '../Elements/Tips';
+import Reviews from '../Elements/Reviews';
 
 
 const Home = () => {
@@ -19,8 +20,9 @@ const Home = () => {
             <div>
                 <Slider></Slider>
                 <PopularService></PopularService>
-                <Tips></Tips>
                 <VetData></VetData>
+                <Reviews></Reviews>
+                <Tips></Tips>
             </div>
         </div>
     );

@@ -4,6 +4,8 @@ import { HiOutlineHome } from "react-icons/hi2";
 import { PiListChecks } from "react-icons/pi";
 import { PiIdentificationBadge } from "react-icons/pi";
 import { MdOutlinePets } from "react-icons/md";
+import { HiOutlineShoppingCart } from "react-icons/hi2";
+
 
 import { Link, NavLink, useNavigate } from 'react-router';
 import AuthContext from '../Contexts/AuthContext';
@@ -29,9 +31,9 @@ const Navbar = () => {
         </NavLink>
         {/* <NavLink className='flex gap-1' to={'/about'}>
             <span className='text-xl flex items-center'>
-                <LiaInfoCircleSolid />
+                <HiOutlineShoppingCart />
             </span>
-            <span className='text-lg'>About</span>
+            <span className='text-lg'>Pet Shop</span>
         </NavLink> */}
         <NavLink className='flex gap-1' to={'/profile'}>
             <span className='text-xl flex items-center'>
@@ -55,9 +57,9 @@ const Navbar = () => {
         </NavLink>
         {/* <NavLink className='flex gap-1' to={'/about'}>
             <span className='flex items-center'>
-                <LiaInfoCircleSolid />
+                <HiOutlineShoppingCart />
             </span>
-            <span>About</span>
+            <span>Pet Shop</span>
         </NavLink> */}
         <NavLink className='flex gap-1' to={'/profile'}>
             <span className='flex items-center'>
@@ -111,12 +113,12 @@ const Navbar = () => {
                                     user.photoURL ? (
                                         <img
                                             className='w-full h-full rounded-full'
-                                            alt="Tailwind CSS Navbar component"
-                                            src={user.photoURL} />
+                                            src={user.photoURL}
+                                            alt="Users Profile Picture."/>
                                     ) : (
                                         <img
                                             className='w-full h-full rounded-full'
-                                            alt="Tailwind CSS Navbar component"
+                                            alt="Profile Picture Icon"
                                             src={'https://img.icons8.com/ios-filled/100/user-male-circle.png'} />
                                     )
                                 }

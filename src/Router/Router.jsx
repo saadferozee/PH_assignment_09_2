@@ -8,7 +8,8 @@ import Login from "../Pages/Login";
 import Services from "../Pages/Services";
 import NotFoundErrorPage from "../errors/NotFoundErrorPage";
 import ServiceDetails from "../Pages/ServiceDetails";
-import Loading from "../Components/Loading";
+import PetShop from "../Pages/PetShop";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -30,11 +31,11 @@ const router = createBrowserRouter([
             },
             {
                 path: '/services/:id',
-                Component: ServiceDetails
+                element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
             },
             {
                 path: '/profile',
-                Component: Profile
+                element: <PrivateRoute><Profile></Profile></PrivateRoute>
             },
             {
                 path: '/login',
@@ -43,11 +44,7 @@ const router = createBrowserRouter([
             {
                 path: '/register',
                 Component: Register
-            },
-            // {
-            //     path: '/loading',
-            //     Component: Loading
-            // }
+            }
         ]
     },
     {

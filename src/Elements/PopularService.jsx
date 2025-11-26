@@ -30,7 +30,7 @@ const PopularService = () => {
                     loading ? (
                         <Loading></Loading>
                     ) : (
-                            <div className='grid grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
+                            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8'>
                             {
                                 PopularServiceData.map(service => <ServiceCard key={service.serviceId} service={service}></ServiceCard>)
                             }

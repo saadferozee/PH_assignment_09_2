@@ -100,8 +100,8 @@ const Register = () => {
                 const user = credential.user;
                 setUser(user);
                 Swal.fire({
-                    title: "Good job!",
-                    text: "You clicked the button!",
+                    title: "Signed Up",
+                    text: "To see and edit your profile information, go 'My Profile'",
                     icon: "success"
                 });
                 navigate('/');

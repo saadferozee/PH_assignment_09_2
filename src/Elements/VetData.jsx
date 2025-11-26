@@ -18,7 +18,7 @@ const VetData = () => {
             <div className='m-[5%] mt-0 p-[3%] bg-[#ff360025] rounded-xl'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12'>
                     {
-                        vetData.map(vet => <VetCard vet={vet}></VetCard>)
+                        vetData.map(vet => <VetCard key={vet.doctorId} vet={vet}></VetCard>)
                     }
                 </div>
             </div>
