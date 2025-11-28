@@ -60,7 +60,7 @@ const ServiceDetails = () => {
                     <h3 className='font-black text-white text-2xl text-center'></h3>
 
                     {/* <label className="label text-white text-lg">Email</label> */}
-                    <input type="email" name='email' className="input w-full rounded-full p-2 px-5 text-sm" placeholder="Name" required />
+                    <input type="text" name='name' className="input w-full rounded-full p-2 px-5 text-sm" placeholder="Name" required />
                     <input type="email" name='email' className="input w-full rounded-full p-2 px-5 text-sm" placeholder="Email" required />
 
                     <button
